@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div id="title">
+      <h1>Formulário de informações pessoais</h1>
+    </div>
+    <div id="parent">
+      <div id="cell1"></div>
+      <form id="form_cadastro" onsubmit="return validar();">
+        <div id="identificacao" class="separacao">
+          <div>
+            <div class="campo_form">
+               <label for="nome">Nome*: </label><input type="text" class="campo_grande" id="nome">
+            </div>
+            <div class="campo_form">
+              <label for="rg">RG: </label><input type="text" id="rg">
+            </div>
+            <div class="campo_form">
+              <label for="cpf">CPF*: </label> <input type="text" id="cpf">
+            </div>
+          </div>
+          <div>
+            <div class="campo_form">
+              <label for="sexo">Sexo: </label>
+              <select id="sexo" id="sexo" >
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outros</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="endereco" class="separacao">
+          <div>
+            <div class="campo_form">
+              <label for="logradouro">Logradouro*: </label> <input type="text" class="campo_grande" id="logradouro">
+            </div>
+            <div class="campo_form">
+              <label for="numero">Numero*: </label> <input type="text" id="numero">
+            </div>
+            <div class="campo_form">
+              <label for="cep">CEP: </label> <input type="text" id="cep">
+            </div>
+          </div>
+          <div>
+            <div class="campo_form">
+              <label for="bairro">Bairro: </label> <input type="text" id="bairro">
+            </div>
+            <div class="campo_form">
+              <label for="cidade">Cidade: </label> <input type="text" id="cidade">
+            </div>
+            <div class="campo_form">
+              <label for="estado">Estado: </label> <input type="text" id="estado">
+            </div>
+          </div>
+        </div>
+        <div id="contato" class="separacao">
+          <div>
+            <div class="campo_form">
+              <label for="telefone">Telefone: </label> <input type="text" id="telefone">
+            </div>
+            <div class="campo_form">
+              <label for="celular">Celular*: </label> <input type="text" id="celular">
+            </div>
+          </div>
+        </div>
+        <div class="separacao">
+          <button type="submit" form="form_cadastro" value="Enviar">Enviar</button>
+        </div>
+      </form>
+      <div id="cell2"></div>
+    </div>
+  </body>
+</html>
